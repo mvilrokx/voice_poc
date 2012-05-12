@@ -13,6 +13,6 @@ end
 
 Sinatra::Application.register Sinatra::RespondTo
 
-require_relative 'lib/pageable'
+require_relative 'lib/init'
 require_relative 'app/models/init'
 require_relative 'app/routes/init'

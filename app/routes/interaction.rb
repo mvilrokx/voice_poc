@@ -3,7 +3,7 @@ class Interaction
   get '/API/v3/interactions/search' do
     content_type :json
     puts params
-    Interaction.search(params).to_json
+    Interaction.find(params).to_json
   end
 
   get '/API/v3/interactions/:id' do
