@@ -5,6 +5,6 @@ gem 'sinatra-respond_to'
 gem 'json'
 gem 'haml'
 gem 'savon'
-#gem "activesupport", :require => "active_support"
+gem "activesupport"
 #gem 'dalli'
 #gem 'nokogiri'

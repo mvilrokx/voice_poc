@@ -1,2 +1,1 @@
-require_relative 'main'
-require_relative 'interaction'
+Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file }

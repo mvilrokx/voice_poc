@@ -1,4 +1,4 @@
-class Interaction
+class Opportunity
   include StandardRoutes
 
 end

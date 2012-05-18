@@ -3,11 +3,11 @@ require 'sinatra'
 require 'sinatra/respond_to'
 require 'json'
 require 'haml'
-
+require 'active_support/all'
 
 configure do
   set :ws_host, 'http://fap0112-crm.oracleads.com'
-  set :user => 'jhenderson', :pwd => 'JKH88658'
+  set :user => 'jhenderson', :pwd => 'Welcome1' # 'BGG58595'
   set :views, settings.root + '/app/views'
 end
 

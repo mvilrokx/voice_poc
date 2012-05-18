@@ -1,4 +1,4 @@
-class Interaction
+class SalesParty
   include StandardRoutes
 
 end
