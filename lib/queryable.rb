@@ -41,7 +41,7 @@ module Queryable
       def filter(where, xml)
         xml.ns2(:filter) do |xml|
           xml.ns2(:group) do |xml|
-            add_filter(id_name||(self.name.camelize + "Id"), '%', xml, 'like') # "dummy" query criteria to avoid issue with find services that require at least 1 criteria
+            # add_filter(id_name||(self.name.camelize + "Id"), '%', xml, 'like') # "dummy" query criteria to avoid issue with find services that require at least 1 criteria
             where.each do |a, v|
               add_filter(a, v, xml)
             end if where
