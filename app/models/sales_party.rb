@@ -7,10 +7,8 @@ class SalesParty
 
   @max_fetch_size = 10
 
-  client do
-    http.headers["Authorization"] = "Basic #{settings.basic_auth}"
-  end
   document "#{settings.ws_host}/crmCommonSalesParties/SalesPartyService?wsdl"
-  wsse_auth settings.user, settings.pwd
+  basic_auth settings.user, settings.pwd
+#  wsse_auth settings.user, settings.pwd
 
 end
