@@ -28,7 +28,7 @@ module Queryable
           xml.ns1(:findCriteria, "xmlns:ns2" => "http://xmlns.oracle.com/adf/svc/types/") do |xml|
             xml.ns2(:fetchStart, fetch_start(p[:page], p[:page_size]||max_fetch_size))
             xml.ns2(:fetchSize, fetch_size(p[:page_size]||max_fetch_size))
-            filter(p[:search], xml) # if p[:search]
+            filter(p[:search], xml) if p[:search]
             sort_order(p[:sort], xml) if p[:sort]
           end
         end

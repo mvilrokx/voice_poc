@@ -2,6 +2,11 @@ require 'savon'
 
 class Interaction
   extend Savon::Model
+
+  client do
+    http.headers["Authorization"] = "Basic bGlzYS5qb25lczpOQnI4Nzk3OA=="
+  end
+
   include Pageable
   include Queryable
 
