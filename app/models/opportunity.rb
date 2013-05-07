@@ -10,6 +10,7 @@ class Opportunity
 
   document "#{settings.ws_host}/opptyMgmtOpportunities/OpportunityService?wsdl"
   basic_auth settings.user, settings.pwd
-#  wsse_auth settings.user, settings.pwd
+  client.http.auth.ssl.verify_mode = :none
+ 	# wsse_auth settings.user, settings.pwd
 
 end

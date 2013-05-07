@@ -9,6 +9,7 @@ class Interaction
 
   document "#{settings.ws_host}/appCmmnCompInteractions/InteractionService?wsdl"
   basic_auth settings.user, settings.pwd
-#  wsse_auth settings.user, settings.pwd
+  client.http.auth.ssl.verify_mode = :none
+ 	# wsse_auth settings.user, settings.pwd
 
 end

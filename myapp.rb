@@ -6,8 +6,8 @@ require 'haml'
 require 'active_support/all'
 
 configure do
-  set :ws_host, 'https://fap0655-crm.oracleads.com'
-  set :user => 'lisa.jones', :pwd => 'NBr87978' # 'BGG58595'
+  set :ws_host, 'https://fap0581-crm.oracleads.com'
+  set :user => 'lisa.jones', :pwd => 'Ngt49384' # 'BGG58595'
   set :views, settings.root + '/app/views'
 end
 

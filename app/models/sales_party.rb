@@ -9,6 +9,7 @@ class SalesParty
 
   document "#{settings.ws_host}/crmCommonSalesParties/SalesPartyService?wsdl"
   basic_auth settings.user, settings.pwd
-#  wsse_auth settings.user, settings.pwd
+  client.http.auth.ssl.verify_mode = :none
+ 	# wsse_auth settings.user, settings.pwd
 
 end
